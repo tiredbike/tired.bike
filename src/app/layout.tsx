@@ -22,13 +22,14 @@ export default function RootLayout({
       <body className={styles.body}>
         <header className={styles.header}>
           <Link href="/" className={styles.logoContainer}>
-            <Image src={logo} alt="" width={50} className={styles.logo} />
+            <Image src={logo} alt="" height={50} className={styles.logo} />
           </Link>
         </header>
         <section className={styles.content}>{children}</section>
         <footer className={styles.footer}>
-          <Link href="/about">about</Link>
-          <a href="https://github.com/mrkvon/mdpages">mdpages</a>
+          <span>
+            Created with <a href="https://github.com/mrkvon/mdpages">mdpages</a>
+          </span>
         </footer>
       </body>
     </html>
